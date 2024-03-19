@@ -1,0 +1,31 @@
+﻿@model List<RegLogin.Models.RegModel>
+<h1>Hi, @ViewBag.data</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Password</th>
+            <th>Confirm Password</th>
+        </tr>
+    </thead>
+    <tbody>
+         @foreach(var item in Model){
+             <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Email</td>
+                <td>@item.PhNo</td>
+                <td>@item.Password</td>
+                <td>@item.ConfirmPassword</td>
+                <td><a href="Update/@item.Id">Edit</a></td>
+                <td><a class="text-danger" href="Delete/@item.Id">Delete</a></td>
+                
+              
+             </tr>
+         }
+    </tbody>
+</table>
+

@@ -1,0 +1,25 @@
+﻿@model RegLogin.Models.LoginModel
+<form asp-action="Privacy">
+	<h1>Login</h1>
+	<div class="inputbox">
+		
+		<label asp-for="Name">Name</label>
+		<input asp-for="Name" required/>
+		
+	</div>
+	<div class="inputbox">
+		
+		<label asp-for="Password">Password</label>
+		<input asp-for="Password" required/>
+	</div>
+	
+	<input type="submit" class="btn btn-primary" value="Login" />
+	
+</form>
+<br />
+<form asp-action="Index">
+	<input type="submit" class="btn btn-primary" value="Register" />
+</form>
+
+
+

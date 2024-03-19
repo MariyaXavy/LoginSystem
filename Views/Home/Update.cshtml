@@ -1,0 +1,33 @@
+﻿@model RegLogin.Models.UpdateModel
+
+<form method="post" asp-action="Update">
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Name</label>
+        <input type="text" asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label">Email</label>
+        <input type="email" asp-for="Email" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="PhNo" class="form-label">PhNo</label>
+        <input type="text" asp-for="PhNo" class="form-control" />
+    </div>
+
+    @*<div class="mb-3">
+        <label asp-for="Password" class="form-label">Password</label>
+        <input type="password" asp-for="Password" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ConfirmPassword" class="form-label">ConfirmPassword</label>
+        <input type="password" asp-for="ConfirmPassword" class="form-control" />
+        <span asp-validation-for="ConfirmPassword"></span>
+    </div>*@
+
+
+    <button type="submit" class="btn btn-primary">Update</button>
+
+</form>
